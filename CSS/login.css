@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(45deg, #00a500, #21642a, #016828, #30c744);
+    background-size: 200% 200%;
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }   
+    
+    50% {
+        background-position: 100% 50%;
+    }    
+
+    100% {
+        background-position: 0% 50%;
+    }    
+}
+
+.login-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.login_header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.login_header img {
+    width: 200px;
+}
+
+.login_header h1 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+.login_input {
+    border: 2px solid rgb(112, 112, 112);
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 300px;
+    outline: none;
+    padding: 15px;
+}
+
+.login_button {
+    background-color: rgb(184, 0, 0);
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.login_button:disabled {
+    background-color: #eee;
+    color: grey;
+    cursor: auto;
+}
+
